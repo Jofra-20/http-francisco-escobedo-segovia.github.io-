@@ -1,0 +1,207 @@
+/* Variables para colores (opcional, pero útil) */
+:root {
+    --primary-color: #4A5568; /* Un rojo para "rechazos" */
+    --secondary-color: #6c7e9e; /* Un verde/azul para "aprendizajes" */
+    --text-color: #4A5568;
+    --background-color: #8FBACF;
+    --card-background: #F0E8DD;
+    --border-color: #F0E8DD;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header/Hero Section */
+.hero {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 40px 20px 20px; /* Adjusted padding */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    margin-bottom: 5px;
+    font-size: 2.8em;
+}
+
+.hero .subtitle {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-top: 0;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #eee;
+    text-decoration: underline;
+}
+
+/* LinkedIn Logo Style */
+.linkedin-logo {
+    width: 32px;  /* Ajusta el tamaño según necesites */
+    height: 32px; /* Ajusta el tamaño según necesites */
+    vertical-align: middle;
+    transition: transform 0.2s ease-in-out;
+}
+.linkedin-logo:hover {
+    transform: scale(1.1);
+}
+
+
+/* Main Navigation Menu */
+.main-nav {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 15px;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between menu items */
+}
+
+.main-nav li {
+    display: inline;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav a:hover, .main-nav a:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* Sections */
+section {
+    background-color: var(--card-background);
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+/* Key Section */
+.section-key .key-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section-key .key-item .icon {
+    font-size: 1.8em;
+    margin-right: 15px;
+}
+
+/* Anti-Entry Styling */
+.anti-entry {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-left: 5px solid var(--primary-color); /* Barra lateral para la entrada */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease-in-out; /* Animación de hover */
+}
+
+.anti-entry:hover {
+    transform: translateY(-5px); /* Pequeño efecto de levantamiento */
+}
+
+.anti-entry h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+.anti-entry .rejection {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.anti-entry .lesson {
+    color: var(--secondary-color);
+    font-style: italic;
+    font-size: 0.95em;
+    border-top: 1px dashed var(--border-color);
+    padding-top: 10px;
+    margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    color: #777;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
